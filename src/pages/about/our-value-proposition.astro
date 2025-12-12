@@ -1,8 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import HeroSection from '../../components/HeroSection.astro';
+import Hero from '../../components/Hero.astro';
 ---
 
 <Layout title="Value Proposition" description="How Green Orbit Digital helps organisations leverage space-enabled solutions to drive sustainability, resilience, and impact.">
@@ -11,7 +9,7 @@ import HeroSection from '../../components/HeroSection.astro';
   <main class="py-8">
 
     <!-- Hero Section -->
-      <HeroSection 
+      <Hero 
         title="Our Value Proposition"
         description="Helping visionary organisations communicate the power of space-enabled solutions to address sustainability challenges and drive meaningful impact." 
       />
@@ -59,6 +57,4 @@ import HeroSection from '../../components/HeroSection.astro';
     </section>
 
   </main>
-
-  <Footer />
 </Layout>

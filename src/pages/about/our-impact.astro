@@ -1,8 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import HeroSection from "../../components/HeroSection.astro";
+import Hero from "../../components/Hero.astro";
 
 import ImpactDashboard from "../../components/Impact/ImpactDashboard.astro";
 
@@ -21,7 +19,7 @@ const yearlyDataArray = [yearly2025];
   <main class="py-8">
 
     <!-- Hero -->
-    <HeroSection
+    <Hero
       title="Our Impact"
       description="We measure and report the positive impact of our work across governance, workers, community, environment, and customers—tracking year-on-year progress."
     />
@@ -53,5 +51,4 @@ const yearlyDataArray = [yearly2025];
     </a>
   </section>
 
-  <Footer />
 </Layout>

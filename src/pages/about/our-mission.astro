@@ -1,39 +1,64 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
-import About from '../../components/About.astro';
-import CTA from '../../components/CTA.astro';
-import Contact from '../../components/Contact.astro';
+import MissionStatement from '../../components/MissionStatement.astro';
+import MissionDescription from '../../components/MissionDescription.astro';
+import MissionPillars from '../../components/MissionPillars.astro';
 ---
 
-<Layout title="Content Services | Green Orbit Digital" description="High-impact content creation and strategy for space sector communications, PR, and digital campaigns.">
-  <main class="main services-page">
+<Layout title="Mission">
+  <Header />
 
+  <main class="py-8">
     <!-- Hero Section -->
-    <Hero title="Content Services" subtitle="Strategic content to engage, inform, and inspire your audience." />
+     <Hero 
+        title="Mission" 
+        description="Empowering businesses to pioneer sustainable innovation through strategic marketing and space-enabled solutions." 
+      />
 
-    <!-- About Section -->
-    <About>
-      <p>At Green Orbit Digital, we specialise in creating high-quality content that drives awareness, builds credibility, and supports sustainable growth in the space sector. Our approach combines storytelling, data-driven insights, and ethical practices to produce content that resonates with your target audience.</p>
+    <!-- Mission Statement -->
+    <section class="bg-gray-50 dark:bg-primary-500 text-white py-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Mission Statement Component -->
+        <MissionStatement />
 
-      <h3>Our Content Services Include</h3>
-      <ul>
-        <li><strong>Content Strategy:</strong> Tailored plans that align with your mission, SDGs, and campaign goals.</li>
-        <li><strong>Editorial Content:</strong> Blog posts, news updates, thought leadership articles, and feature stories.</li>
-        <li><strong>Digital Campaign Content:</strong> Social media posts, email newsletters, and landing page copy optimized for engagement.</li>
-        <li><strong>Visual Storytelling:</strong> Infographics, illustrations, and multimedia content that translate complex space topics into compelling narratives.</li>
-        <li><strong>SEO & Analytics:</strong> Keyword research, content optimisation, and performance tracking to maximise reach and impact.</li>
-      </ul>
+        <!-- Mission Description Component -->
+        <MissionDescription />
+      </div>
+    </section>
 
-      <h3>Why Work With Us?</h3>
-      <p>We understand the unique challenges of the space and sustainability sectors. Our team combines industry expertise with creative flair, ensuring every piece of content supports your brand story, enhances visibility, and drives measurable results.</p>
-    </About>
+    <!-- Mission Pillars -->
+    <section class="bg-gray-50 dark:bg-primary-500">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Our Mission Pillars</h2>
+        <MissionPillars />
+    </section>
 
-    <!-- Call to Action Section -->
-    <CTA text="Start Your Content Journey" buttonText="Get in Touch" buttonLink="#contact" />
+    <!-- Optional Supporting Story -->
+    <section class="bg-white dark:bg-accent-500 py-12">
+      <div class="container-custom grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Why We Do This</h3>
+          <p class="text-gray-600 dark:text-white mb-4">
+            Our mission is rooted in sustainability, innovation, and measurable impact. We guide organisations to grow responsibly while embracing space-enabled solutions.
+          </p>
+          <p class="text-gray-600 dark:text-white">
+            Through professional certifications, strategic partnerships, and a commitment to the UN Sustainable Development Goals, we ensure every initiative aligns with ethical and environmental standards.
+          </p>
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-xl">
+          <img src="/images/mission-story.png" alt="Our Mission Story" class="w-full h-auto" />
+        </div>
+      </div>
+    </section>
 
-    <!-- Contact Section -->
-    <Contact />
+    <!-- Full-Width CTA -->
+    <section class="w-full bg-secondary-500 py-16 text-white text-center">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to collaborate?</h2>
+        <p class="mb-8 text-lg sm:text-xl text-gray-200">Let’s drive responsible growth for your organisation. Get in touch for a custom package or exploratory call.</p>
+        <a href="/contact" class="inline-block w-full sm:w-auto px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition text-lg sm:text-xl">Contact Us</a>
+      </div>
+    </section>
 
   </main>
 </Layout>

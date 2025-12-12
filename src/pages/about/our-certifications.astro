@@ -1,8 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import HeroSection from '../../components/HeroSection.astro';
+import Hero from '../../components/Hero.astro';
 import { getCertificationsSchema } from '../../components/Schema/CertificationsSchema';
 import certifications from '../../data/schema/certifications.json' assert { type: 'json' };
 
@@ -15,7 +13,7 @@ const schema = JSON.stringify(getCertificationsSchema());
   <main class="py-12 space-y-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <!-- Hero Section -->
-    <HeroSection 
+    <Hero 
       title="Certifications & Accreditations" 
       description="Our certifications reflect Green Orbit Digital’s commitment to professional excellence, ethical standards, and sustainable business practices across the digital and space sectors."
     />

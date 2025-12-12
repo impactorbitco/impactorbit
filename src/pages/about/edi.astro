@@ -1,8 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import HeroSection from "../../components/HeroSection.astro";
+import Hero from "../../components/Hero.astro";
 ---
 
 <Layout 
@@ -13,7 +11,7 @@ import HeroSection from "../../components/HeroSection.astro";
 
   <main class="py-8">
   <!-- HERO -->
-  <HeroSection
+  <Hero
     title="Equality, Diversity & Inclusion"
     description="We believe that equality, diversity and inclusion are fundamental to creating a positive, collaborative and forward-thinking culture."
   />
@@ -197,5 +195,4 @@ import HeroSection from "../../components/HeroSection.astro";
     </a>
   </section>
 
-  <Footer />
 </Layout>

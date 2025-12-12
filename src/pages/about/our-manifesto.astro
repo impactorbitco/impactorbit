@@ -1,8 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import HeroSection from '../../components/HeroSection.astro';
+import Hero from '../../components/Hero.astro';
 import VisionStatement from '../../components/VisionStatement.astro';
 import ValueIcons from '../../components/ValueIcons.jsx';
 ---
@@ -13,7 +11,7 @@ import ValueIcons from '../../components/ValueIcons.jsx';
   <main class="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <!-- HERO -->
-    <HeroSection 
+    <Hero 
       title="Our Manifesto"
       description="Harnessing the power of space for a greener, more resilient future through purpose-led marketing and sustainable innovation."
     />
@@ -124,5 +122,5 @@ import ValueIcons from '../../components/ValueIcons.jsx';
         <a href="/contact" class="inline-block w-full sm:w-auto px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition text-lg sm:text-xl">Contact Us</a>
       </div>
     </section>
-  <Footer />
+
 </Layout>

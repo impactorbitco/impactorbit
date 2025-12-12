@@ -1,8 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import HeroSection from "../../components/HeroSection.astro";
+import Hero from "../../components/Hero.astro";
 ---
 
 <Layout 
@@ -14,7 +12,7 @@ import HeroSection from "../../components/HeroSection.astro";
   <main class="py-8">
 
   <!-- HERO -->
-  <HeroSection
+  <Hero
     title="Our Culture"
     description="Small but mighty. At Green Orbit Digital, agility, purpose, and creativity drive everything we do—helping clients make a real impact sustainably."
   />
@@ -85,5 +83,4 @@ import HeroSection from "../../components/HeroSection.astro";
     </a>
   </section>
 
-  <Footer />
 </Layout>

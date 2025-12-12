@@ -1,8 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import HeroSection from '../../components/HeroSection.astro';
+import Hero from '../../components/Hero.astro';
 ---
 
 <Layout title="Our Experience">
@@ -11,7 +9,7 @@ import HeroSection from '../../components/HeroSection.astro';
   <main class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
 
     <!-- Hero Section -->
-    <HeroSection 
+    <Hero 
       title="Experience" 
       description="Our team combines scientific expertise, space industry knowledge, and sustainable marketing skills to deliver impactful results for clients."
     />
@@ -44,5 +42,4 @@ import HeroSection from '../../components/HeroSection.astro';
 
   </main>
 
-  <Footer />
 </Layout>

@@ -1,39 +1,50 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
-import About from '../../components/About.astro';
-import CTA from '../../components/CTA.astro';
-import Contact from '../../components/Contact.astro';
+import ValuesList from '../../components/ValuesList.jsx';
 ---
 
-<Layout title="Content Services | Green Orbit Digital" description="High-impact content creation and strategy for space sector communications, PR, and digital campaigns.">
-  <main class="main services-page">
+<Layout title="Our Values" description="Core principles driving innovation, sustainability, and excellence at Green Orbit Digital.">
+  <Header />
+
+  <main class="py-12 space-y-16">
 
     <!-- Hero Section -->
-    <Hero title="Content Services" subtitle="Strategic content to engage, inform, and inspire your audience." />
+    <Hero 
+      title="Our Values" 
+      description="Guiding principles that fuel innovation, responsibility, and lasting impact in sustainable space marketing." 
+    />
 
-    <!-- About Section -->
-    <About>
-      <p>At Green Orbit Digital, we specialise in creating high-quality content that drives awareness, builds credibility, and supports sustainable growth in the space sector. Our approach combines storytelling, data-driven insights, and ethical practices to produce content that resonates with your target audience.</p>
+    <!-- Introduction -->
+    <section class="py-16 bg-gray-50 dark:bg-primary-500 text-center w-full">
+      <p class="text-gray-700 dark:text-white text-lg sm:text-xl max-w-6xl mx-auto">
+        At Green Orbit Digital, our core values are the guiding principles that shape our approach to every project, every partnership, and every campaign we lead. With a focus on sustainability, innovation, and responsibility, these values propel us toward our mission of transforming the space industry and beyond into a force for positive change.
+      </p>
 
-      <h3>Our Content Services Include</h3>
-      <ul>
-        <li><strong>Content Strategy:</strong> Tailored plans that align with your mission, SDGs, and campaign goals.</li>
-        <li><strong>Editorial Content:</strong> Blog posts, news updates, thought leadership articles, and feature stories.</li>
-        <li><strong>Digital Campaign Content:</strong> Social media posts, email newsletters, and landing page copy optimized for engagement.</li>
-        <li><strong>Visual Storytelling:</strong> Infographics, illustrations, and multimedia content that translate complex space topics into compelling narratives.</li>
-        <li><strong>SEO & Analytics:</strong> Keyword research, content optimisation, and performance tracking to maximise reach and impact.</li>
-      </ul>
-
-      <h3>Why Work With Us?</h3>
-      <p>We understand the unique challenges of the space and sustainability sectors. Our team combines industry expertise with creative flair, ensuring every piece of content supports your brand story, enhances visibility, and drives measurable results.</p>
-    </About>
-
-    <!-- Call to Action Section -->
-    <CTA text="Start Your Content Journey" buttonText="Get in Touch" buttonLink="#contact" />
-
-    <!-- Contact Section -->
-    <Contact />
+    <!-- Values Overview (Full Width) -->
+      <div class="px-4 sm:px-6 lg:px-8 space-y-4">
+        <!-- Full-width Values Component -->
+        <ValuesList class="w-full" />
+                <p class="text-gray-700 dark:text-white text-lg sm:text-xl max-w-6xl mx-auto">
+          These values are more than just ideals—they are the essence of who we are and how we work. Guided by a vision for a sustainable future, Green Orbit Digital leads the way in shaping an eco-conscious, innovative, and responsible marketing landscape.
+        </p>
+      </div>
+    </section>
 
   </main>
+
+  <!-- Call to Action -->
+  <section class="w-full bg-secondary-500 py-16 text-white text-center">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <h2 class="text-3xl sm:text-4xl font-bold">Ready to collaborate?</h2>
+      <p class="text-lg sm:text-xl text-white">
+        Let’s drive responsible growth for your organisation. Get in touch for a custom package or exploratory call.
+      </p>
+      <a href="/contact" class="inline-block w-full sm:w-auto px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition text-lg sm:text-xl">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  
 </Layout>
