@@ -1,15 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import Hero from '../../components/Hero.astro';
 import OrganisationsList from '../../components/OrganisationsList.jsx';
 import allOrganisations from '../../data/organisations.json';
 
-// Use all organisations
 const organisations = allOrganisations;
 
-// Sort alphabetically by organisation name
 const sortedOrganisations = organisations.slice().sort((a, b) =>
   (a.organisation ?? '').localeCompare(b.organisation ?? '')
 );
