@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+
+// Integrated Management System base domain
+const IMS_DOMAIN = 'https://impactorbitco.github.io/handbook-main/ims/';
 ---
 
 <Layout title="Legal, Governance & Policies">
@@ -8,7 +11,7 @@ import Hero from '../components/Hero.astro';
   <main class="py-8">
     <Hero 
       title="Legal, Governance & Policies" 
-      description="This page outlines Impact Orbit Creative Group’s legal framework, governance approach, and integrated management system, including links to our core policies."
+      description="This page outlines Impact Orbit Creative Group’s legal framework, governance approach, and integrated management system, including links to our core policies and standards."
     />
 
     <section class="py-16 bg-white dark:bg-secondary-500">
@@ -32,121 +35,121 @@ import Hero from '../components/Hero.astro';
           </address>
 
           <p class="mb-8">
-            This page applies to Impact Orbit Creative Group Ltd and its associated brands, initiatives, and digital platforms, including <strong>Green Orbit Space Communications & PR</strong>, unless otherwise stated.
+            This framework applies to Impact Orbit Creative Group Ltd and its associated brands, initiatives, and platforms, including
+            <strong> Green Orbit Space Communications & PR</strong>, unless otherwise stated.
           </p>
 
           <h2 class="mt-10 mb-4">2. Governance and Accountability</h2>
           <p class="mb-6">
-            Impact Orbit operates with a governance model designed to support transparency, accountability, and responsible decision-making across commercial, environmental, and social domains.
+            Impact Orbit operates a governance model designed to support transparency, accountability, and responsible decision-making across commercial, environmental, and social domains.
           </p>
 
           <ul class="mb-8 list-disc list-inside space-y-2">
-            <li>Clear executive accountability for legal, ethical, and sustainability matters.</li>
-            <li>Documented policies and procedures aligned with applicable UK law and recognised international standards.</li>
-            <li>Risk-based decision-making informed by data, materiality, and proportionality.</li>
-            <li>Regular review of policies to reflect changes in regulation, industry practice, and organisational growth.</li>
+            <li>Defined executive accountability for legal, ethical, and sustainability matters.</li>
+            <li>Documented policies aligned with UK law and recognised international standards.</li>
+            <li>Risk-based decision-making informed by materiality and proportionality.</li>
+            <li>Scheduled policy review as part of continual improvement.</li>
           </ul>
 
           <h2 class="mt-10 mb-4">3. Integrated Management System (IMS)</h2>
           <p class="mb-6">
-            Impact Orbit maintains an <strong>Integrated Management System (IMS)</strong> that brings together governance, risk management, data protection, information security, sustainability, and quality practices into a single, coherent framework.
+            Impact Orbit maintains an <a href={`${IMS_DOMAIN}`} <strong>Integrated Management System (IMS)</strong></a> that consolidates governance, risk management,
+            information security, sustainability, quality, and business continuity into a single operating framework.
           </p>
 
           <p class="mb-6">
-            Our IMS is designed to align with the intent and principles of recognised standards, including:
+            The IMS is aligned with the intent and principles of the following standards:
           </p>
 
           <ul class="mb-8 list-disc list-inside space-y-2">
-            <li>ISO 9001 (Quality Management)</li>
-            <li>ISO/IEC 27001 (Information Security Management)</li>
-            <li>ISO 14001 (Environmental Management)</li>
-            <li>ISO 22301 (Business Continuity)</li>
+            <li>
+              <a href={`${IMS_DOMAIN}/standards/iso-9001`} class="text-accent-500 hover:underline">
+                ISO 9001 – Quality Management
+              </a>
+            </li>
+            <li>
+              <a href={`${IMS_DOMAIN}/standards/iso-27001`} class="text-accent-500 hover:underline">
+                ISO/IEC 27001 – Information Security Management
+              </a>
+            </li>
+            <li>
+              <a href={`${IMS_DOMAIN}/standards/iso-14001`} class="text-accent-500 hover:underline">
+                ISO 14001 – Environmental Management
+              </a>
+            </li>
+            <li>
+              <a href={`${IMS_DOMAIN}/standards/iso-22301`} class="text-accent-500 hover:underline">
+                ISO 22301 – Business Continuity
+              </a>
+            </li>
           </ul>
 
           <p class="mb-8">
-            While certification status may vary by area, our policies, controls, and operating procedures are structured to support continual improvement, auditability, and regulatory compliance.
+            Certification status may vary by standard; however, all policies, controls, and procedures are designed to support
+            auditability, regulatory compliance, and continual improvement.
           </p>
 
-          <h2 class="mt-10 mb-4">4. Core Policies</h2>
+          <h2 class="mt-10 mb-4">4. Core Public Policies</h2>
           <p class="mb-6">
-            The following policies form the foundation of Impact Orbit’s legal and operational framework. These apply across our websites, services, and client engagements unless otherwise stated.
+            The following policies are publicly available and apply across Impact Orbit’s websites, services, and client engagements.
           </p>
 
           <ul class="mb-10 list-disc list-inside space-y-3">
             <li>
-              <a href="/privacy-policy" class="text-accent-500 hover:underline">
-                Privacy Policy
-              </a>
-              – How we collect, use, and protect personal data.
+              <a href="/privacy-policy" class="text-accent-500 hover:underline">Privacy Policy</a>
             </li>
             <li>
-              <a href="/cookie-policy" class="text-accent-500 hover:underline">
-                Cookie Policy
-              </a>
-              – How cookies and similar technologies are used across our sites.
+              <a href="/cookie-policy" class="text-accent-500 hover:underline">Cookie Policy</a>
             </li>
             <li>
-              <a href="/information-security-policy" class="text-accent-500 hover:underline">
-                Information Security Policy
-              </a>
-              – Our approach to protecting information assets and managing cyber risk.
+              <a href="/information-security-policy" class="text-accent-500 hover:underline">Information Security Policy</a>
             </li>
             <li>
-              <a href="/data-protection-policy" class="text-accent-500 hover:underline">
-                Data Protection Policy
-              </a>
-              – Internal controls supporting compliance with UK GDPR and data protection law.
+              <a href="/data-protection-policy" class="text-accent-500 hover:underline">Data Protection Policy</a>
             </li>
             <li>
               <a href="/sustainability-policy" class="text-accent-500 hover:underline">
                 Sustainability & Environmental Policy
               </a>
-              – Our commitment to responsible, sustainable practices in the space sector.
             </li>
             <li>
               <a href="/code-of-conduct" class="text-accent-500 hover:underline">
                 Code of Conduct & Ethics
               </a>
-              – Expected standards of behaviour for staff, partners, and suppliers.
             </li>
           </ul>
 
           <h2 class="mt-10 mb-4">5. Risk Management</h2>
           <p class="mb-6">
-            Risks to our business, clients, and stakeholders are identified, assessed, and managed through our IMS using a proportionate, risk-based approach.
+            Risks are identified, assessed, and managed through the IMS using a proportionate, risk-based approach.
           </p>
 
           <ul class="mb-8 list-disc list-inside space-y-2">
             <li>Information security and data protection risks.</li>
             <li>Operational and delivery risks.</li>
             <li>Legal and regulatory compliance risks.</li>
-            <li>Environmental and sustainability-related risks.</li>
+            <li>Environmental and sustainability risks.</li>
           </ul>
 
           <h2 class="mt-10 mb-4">6. Third Parties and Suppliers</h2>
           <p class="mb-8">
-            Impact Orbit works with carefully selected suppliers and partners. Where relevant, third parties are subject to contractual obligations covering confidentiality, data protection, and security, aligned with our internal policies and IMS controls.
+            Suppliers and partners are selected and managed in line with IMS controls, including contractual requirements for
+            confidentiality, data protection, and security where applicable.
           </p>
 
-          <h2 class="mt-10 mb-4">7. Legal Compliance</h2>
+          <h2 class="mt-10 mb-4">7. Policy Review and Updates</h2>
           <p class="mb-8">
-            We aim to comply with all applicable UK legislation, including (but not limited to) company law, data protection law, consumer protection law, and electronic communications regulations. Compliance obligations are reviewed regularly as part of our governance processes.
+            This page and the associated policies are reviewed periodically. The current, authoritative versions of IMS-controlled
+            documents are maintained within the IMS domain.
           </p>
 
-          <h2 class="mt-10 mb-4">8. Policy Review and Updates</h2>
-          <p class="mb-8">
-            This page and the linked policies may be updated periodically to reflect changes in law, standards, or organisational practices. The most current versions will always be published on our website.
-          </p>
-
-          <h2 class="mt-10 mb-4">9. Contact and Further Information</h2>
+          <h2 class="mt-10 mb-4">8. Contact and Further Information</h2>
           <p class="mb-6">
-            For questions regarding our governance framework, policies, or Integrated Management System, please contact us:
+            For enquiries regarding governance, policies, or the Integrated Management System:
           </p>
 
           <div class="flex flex-wrap gap-4 mb-6">
-            <a href="/contact" class="btn-primary">
-              Contact Us
-            </a>
+            <a href="/contact" class="btn-primary">Contact Us</a>
           </div>
 
           <address class="not-italic text-sm mb-8">
